@@ -1,2 +1,2 @@
-# Website
-The new website for Outliers Fund starting in 2020
+# Outliers Fund Website © 2020
+The new website for Outliers Fund developed & launched in 2020 by Poseidon Ho
