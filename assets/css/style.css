@@ -6363,7 +6363,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #090909;
+  background-color: #000000;
 }
 
 .v-light .intro-about .background-mask .background-mask-bg {
@@ -7357,11 +7357,11 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 .our-team {
   position: relative;
   overflow: hidden;
-  background-color: #090909;
+  background-color: #000000;
 }
 
 .v-light .our-team {
-  background-color: #e6e6e6;
+  background-color: #000000;
 }
 
 .our-team.our-team-not-bg {
