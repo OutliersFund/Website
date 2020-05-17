@@ -1684,7 +1684,7 @@ body > * {
 }
 
 .one-title {
-  width: 620px;
+  width: 800px;
   margin-bottom: 70px;
 }
 
@@ -7403,12 +7403,12 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 }
 
 .our-team .team-item .box-content h4 {
-  letter-spacing: -1px;
+  letter-spacing: 0px;
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 5px;
   text-transform: uppercase;
-  word-spacing: 8px;
+  word-spacing: 4px;
   -webkit-transition: 1s cubic-bezier(0.645, 0, 0.355, 1);
   -o-transition: 1s cubic-bezier(0.645, 0, 0.355, 1);
   transition: 1s cubic-bezier(0.645, 0, 0.355, 1);
