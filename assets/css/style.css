@@ -5886,7 +5886,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 
 .brand-client .wapper-client .logo-box {
   position: relative;
-  background-color: #090909;
+  background-color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5894,7 +5894,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: calc(33.33333% - 2px);
+  width: calc(12.5% - 2px);
   padding: 15px;
   min-height: 240px;
   margin-right: 2px;
@@ -5903,7 +5903,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 }
 
 .v-light .brand-client .wapper-client .logo-box {
-  background-color: #e6e6e6;
+  background-color: #000000;
 }
 
 @media only screen and (max-width: 767px) {
@@ -5948,7 +5948,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 }
 
 .v-light .brand-client .wapper-client .logo-box .info .content {
-  background-color: #f9f9f9;
+  background-color: #000000;
 }
 
 .brand-client .wapper-client .logo-box .info .content .icon {
