@@ -5902,6 +5902,29 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   overflow: hidden;
 }
 
+.brand-client .wapper-client .team-box {
+  position: relative;
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: calc(25% - 2px);
+  padding: 15px;
+  min-height: 240px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  overflow: hidden;
+}
+
+.team-box h4 {
+  font-weight: 800;
+  line-height: 1.5;
+}
+
 .v-light .brand-client .wapper-client .logo-box {
   background-color: #000000;
 }
@@ -5910,10 +5933,16 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   .brand-client .wapper-client .logo-box {
     width: calc(50% - 2px);
   }
+  .brand-client .wapper-client .team-box {
+    width: calc(50% - 2px);
+  }
 }
 
 @media only screen and (max-width: 400px) {
   .brand-client .wapper-client .logo-box {
+    width: 100%;
+  }
+  .brand-client .wapper-client .team-box {
     width: 100%;
   }
 }
