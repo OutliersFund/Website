@@ -6453,7 +6453,6 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 }
 
 .intro-about .intro-content-text p {
-  max-width: 370px;
   margin-bottom: 30px;
   letter-spacing: 0.4px;
 }
@@ -6488,7 +6487,6 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   position: relative;
   width: 100%;
   height: 100%;
-  padding: 100px;
 }
 
 .intro-about .img-box img {
