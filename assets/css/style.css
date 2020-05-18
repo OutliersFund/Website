@@ -3234,6 +3234,7 @@ body.hamburger-menu .header-top {
 }
 
 .header-top .header-container {
+  background-color: #000000;
   position: absolute;
   width: 100%;
   max-width: 2560px;
