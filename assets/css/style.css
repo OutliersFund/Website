@@ -1747,7 +1747,7 @@ body > * {
   left: 15px;
   height: 1px;
   width: 52px;
-  background: rgba(233, 233, 233, 0.1);
+  background: rgba(233, 233, 233, 0.5);
 }
 
 .v-light .one-title .title-sub-container .title-sub:after {
