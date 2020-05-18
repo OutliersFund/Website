@@ -7368,7 +7368,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 }
 
 .our-team .custom-container {
-  width: 120%;
+  width: 100%;
 }
 
 .our-team .slick-list {
@@ -7377,7 +7377,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 
 .our-team .team-item {
   position: relative;
-  width: 33.3333%;
+/*  width: 25%;*/
   margin-right: 50px;
 }
 
