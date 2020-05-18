@@ -6198,7 +6198,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 }
 
 .box-seat.box-seat-under-header .custom-container {
-  width: 120%;
+  width: 100%;
 }
 
 .box-seat.box-seat-under-header .inner-img {
@@ -6763,7 +6763,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 }
 
 .work-under-header .custom-container {
-  width: 120%;
+  width: 100%;
 }
 
 .work-under-header .slick-list {
@@ -7230,7 +7230,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 }
 
 .our-news .custom-container {
-  width: 120%;
+  width: 100%;
 }
 
 @media only screen and (max-width: 400px) {
