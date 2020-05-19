@@ -5895,7 +5895,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: calc(12.5% - 2px);
+  width: calc(16.666666% - 2px);
   padding: 15px;
   min-height: 240px;
   margin-right: 2px;
@@ -5930,19 +5930,31 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   background-color: #000000;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1220px) {
   .brand-client .wapper-client .logo-box {
-    width: calc(50% - 2px);
+    width: calc(33.333333% - 2px);
   }
-  .brand-client .wapper-client .team-box {
+}
+
+@media only screen and (max-width: 620px) {
+  .brand-client .wapper-client .logo-box {
     width: calc(50% - 2px);
   }
 }
 
 @media only screen and (max-width: 400px) {
   .brand-client .wapper-client .logo-box {
-    width: 100%;
+    width: 100%
   }
+}
+
+@media only screen and (max-width: 1140px) {
+  .brand-client .wapper-client .team-box {
+    width: calc(50% - 2px);
+  }
+}
+
+@media only screen and (max-width: 570px) {
   .brand-client .wapper-client .team-box {
     width: 100%;
   }
