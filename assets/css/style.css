@@ -6883,7 +6883,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   font-size: 13px;
   letter-spacing: 2px;
   font-weight: 500;
-  text-transform: uppercase;
+/*  text-transform: uppercase;*/
   margin-bottom: 10px;
   font-family: "Montserrat", sans-serif;
   opacity: 0.9;
@@ -6902,6 +6902,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   transition: margin-bottom 0.5s ease;
   z-index: 3;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .work-under-header .work-item .item-info span {
