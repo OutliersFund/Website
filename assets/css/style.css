@@ -6852,7 +6852,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   left: 15px;
   right: 15px;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+/*  background-color: rgba(0, 0, 0, 0.5);*/
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
   transform: scale(1.5);
@@ -6890,7 +6890,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 }
 
 .v-light .work-under-header .work-item .item-info .cat {
-  color: rgba(255, 255, 255, 0.69);
+/*  color: rgba(255, 255, 255, 0.69);*/
 }
 
 .work-under-header .work-item .item-info h4 {
@@ -6909,7 +6909,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   color: #fff;
   opacity: 0;
   font-size: 13px;
-  text-transform: uppercase;
+  line-height: 20px;
   letter-spacing: 2px;
   -webkit-transition: opacity 0.6s ease;
   -o-transition: opacity 0.6s ease;
