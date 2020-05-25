@@ -125,7 +125,6 @@
             cssEase : "linear",
         } );
 
-
         $( " .our-news .slick-slider , .our-team .slick-slider , [data-dsn-col=\"2\"] .slick-slider" ).slick( {
             infinite : true,
             slidesToShow : 2,
@@ -134,7 +133,7 @@
             responsive : [
 
                 {
-                    breakpoint : 800,
+                    breakpoint : 750,
                     settings : {
                         slidesToShow : 1,
                         slidesToScroll : 1,
@@ -144,7 +143,6 @@
             ],
         } );
 
-
         $( "[data-dsn-col=\"3\"] .slick-slider" ).slick( {
             infinite : true,
             slidesToShow : 3,
@@ -153,14 +151,46 @@
             responsive : [
 
                 {
-                    breakpoint : 800,
+                    breakpoint : 1000,
                     settings : {
                         slidesToShow : 2,
-                        slidesToScroll : 2,
+                        slidesToScroll : 1,
                     },
                 },
                 {
-                    breakpoint : 600,
+                    breakpoint : 750,
+                    settings : {
+                        slidesToShow : 1,
+                        slidesToScroll : 1,
+                    },
+                },
+
+            ],
+        } );
+
+        $( "[data-dsn-col=\"4\"] .slick-slider" ).slick( {
+            infinite : true,
+            slidesToShow : 4,
+            arrows : false,
+            dots : true,
+            responsive : [
+
+                {
+                    breakpoint : 1400,
+                    settings : {
+                        slidesToShow : 3,
+                        slidesToScroll : 1,
+                    },
+                },
+                {
+                    breakpoint : 1000,
+                    settings : {
+                        slidesToShow : 2,
+                        slidesToScroll : 1,
+                    },
+                },
+                {
+                    breakpoint : 750,
                     settings : {
                         slidesToShow : 1,
                         slidesToScroll : 1,

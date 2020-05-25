@@ -6864,7 +6864,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
   position: absolute;
   left: 50%;
   padding: 25px 15px 30px;
-  width: 270px;
+  width: 100%;
   text-align: center;
   -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.08, 0.03, 0.22, 0.87);
   transition: -webkit-transform 0.5s cubic-bezier(0.08, 0.03, 0.22, 0.87);
@@ -6896,7 +6896,7 @@ body.nav-active .dsn-nav-bar .icon-m .menu-icon__line {
 .work-under-header .work-item .item-info h4 {
   position: relative;
   color: #fff;
-  font-size: 25px;
+  font-size: 26px;
   -webkit-transition: margin-bottom 0.5s ease;
   -o-transition: margin-bottom 0.5s ease;
   transition: margin-bottom 0.5s ease;
