@@ -9,7 +9,6 @@
             ", .next-project , .root-project",
     };
 
-
     preloader();
     navBar();
     var effectScroll = effectScroller();
@@ -19,7 +18,6 @@
     animate.allInt();
     reloadAjax();
     effectBackForward();
-
 
     /**
      * Execute data after ajax
@@ -43,7 +41,6 @@
 
     }
 
-
     /***
      *
      * Loading Page
@@ -62,12 +59,10 @@
         var preloader_after = preloader.find( ".preloader-after" );
         var preloader_before = preloader.find( ".preloader-before" );
 
-
         var timer = dsnGrid.pageLoad( 0, 100, 300, function ( val ) {
             progress_number.text( val );
             preloader_progress.css( "width", val + "%" );
         } );
-
 
         wind.on( "load", function () {
 
@@ -96,9 +91,7 @@
             } );
         } );
 
-
     }
-
 
     function changeColor() {
         const $isLight = $( "[data-dsn-temp=\"light\"]" );
@@ -112,7 +105,6 @@
         } else
             body.removeClass( "v-light" );
     }
-
 
     function slidereProjects() {
 
@@ -246,7 +238,6 @@
                     holder = $( "#descover-holder" ),
                     scale = 1.2;
 
-
                 if ( heroImg.hasClass( "parallax-move-element" ) )
                     dsnGrid.parallaxMoveElemnt( {
                         target : $( eHeaderProject ),
@@ -254,7 +245,6 @@
                     }, 5, 1 );
 
                 var parallax = new TimelineMax();
-
 
                 //--> Hero Image Project
                 if ( heroImg.length > 0 ) {
@@ -264,7 +254,6 @@
                         , 0 );
 
                 }
-
 
                 //--> Hero Title
                 if ( heroTitle.length > 0 ) {
@@ -276,6 +265,7 @@
                         scale : scale,
                     }, 0 );
                 }
+
                 //--> Hero Fill Title
                 if ( fillTitle.length > 0 ) {
                     parallax
@@ -295,7 +285,6 @@
 
                 }
 
-
                 //--> Hero Fill Title
                 if ( holder.length > 0 )
                     parallax.to( holder, .8, {
@@ -303,7 +292,6 @@
                         bottom : "-10%",
                         autoAlpha : 0,
                     }, 0 );
-
 
                 if ( parallax._totalDuration <= 0 ) return false;
                 var parallaxProject = new ScrollMagic.Scene( {
@@ -333,6 +321,7 @@
 
                 return parallaxProject;
             },
+
             nextProject : function () {
 
                 let footerImg = $( "#dsn-next-parallax-img" ),
@@ -357,7 +346,6 @@
 
                 }
 
-
                 function footImg() {
                     if ( footerImg.length <= 0 ) return false;
 
@@ -375,7 +363,6 @@
                             }
                             , 0 ) )
                         .addTo( controller );
-
 
                 }
 
@@ -397,9 +384,7 @@
                             , 0 ) )
                         .addTo( controller );
 
-
                 }
-
 
             },
 
@@ -436,7 +421,6 @@
                                 } );
                         }
 
-
                         var parallaxIt = new ScrollMagic.Scene( {
                             triggerElement : this,
                             triggerHook : triggerHook,
@@ -451,6 +435,7 @@
                     }
                 } );
             },
+
             moveSection : function () {
                 const moveUp = $( "[data-dsn-grid=\"move-section\"]" );
                 moveUp.each( function () {
@@ -481,6 +466,7 @@
                     } );
                 } );
             },
+
             parallaxImgHover : function () {
                 const parallax = $( "[data-dsn=\"parallax\"]" );
                 if ( parallax.length === 0 || wind.width() < 992 ) {
@@ -495,11 +481,11 @@
 
                     if ( _that.hasClass( "image-zoom" ) ) scale = true;
 
-
                     dsnGrid.parallaxMoveElemnt( _that, move, speed, undefined, scale );
 
                 } );
             },
+
             changeColor : function () {
                 const v_b = "v-light";
                 var isLight = body.hasClass( v_b );
@@ -534,6 +520,7 @@
                     } );
                 } );
             },
+
             animateText : function () {
                 const $element = $( "[data-dsn-animate=\"text\"] , [data-dsn-animate=\"up\"]" );
                 $element.each( function () {
@@ -559,6 +546,7 @@
                 } );
 
             },
+
             headerBlog : function () {
                 const header_project = $( "[data-dsn-header=\"blog\"]" );
                 if ( header_project.length <= 0 || wind.width() < 992 ) return;
@@ -576,6 +564,7 @@
                     parallaxIt.refresh();
                 } );
             },
+
             allInt : function () {
 
                 this.clearControl();
@@ -592,7 +581,6 @@
                 this.changeColor();
                 // this.headerBlog();
 
-
             },
         };
 
@@ -605,7 +593,6 @@
         const Scrollbar = window.Scrollbar;
         const locked_scroll = "locked-scroll";
         var myScrollbar = document.querySelector( "#dsn-scrollbar" );
-
 
         return {
             isMobile : function () {
@@ -626,7 +613,9 @@
                 }
 
                 return false;
-            }, isMobiles : function () {
+            }, 
+
+            isMobiles : function () {
                 if ( navigator.userAgent.match( /Android/i )
                     || navigator.userAgent.match( /webOS/i )
                     || navigator.userAgent.match( /iPhone/i )
@@ -644,6 +633,7 @@
 
                 return false;
             },
+
             isScroller : function ( $print ) {
                 if ( $print )
                     myScrollbar = document.querySelector( "#dsn-scrollbar" );
@@ -656,6 +646,7 @@
 
                 return !hasSc;
             },
+
             locked : function () {
                 body.addClass( locked_scroll );
                 if ( this.isScroller() ) {
@@ -665,6 +656,7 @@
                     }
                 }
             },
+
             unlocked : function () {
                 body.removeClass( locked_scroll );
                 this.start();
@@ -672,12 +664,14 @@
                 dsnGrid.progressCircle( effectScroll );
 
             },
+
             getScrollbar : function ( $id ) {
                 if ( $id === undefined ) {
                     return Scrollbar.get( myScrollbar );
                 }
                 return Scrollbar.get( document.querySelector( $id ) );
             },
+
             getListener : function ( $obj ) {
                 if ( $obj === undefined ) return;
                 var $this = this;
@@ -687,6 +681,7 @@
                     wind.on( "scroll", $obj );
                 }
             },
+
             start : function () {
                 dsnGrid.scrollTop( 0, 1 );
                 $( ".scroll-to" ).on( "click", function ( e ) {
@@ -713,16 +708,19 @@
                 this.workScroll();
 
             },
+
             sliderScroll : function () {
                 Scrollbar.init( document.querySelector( ".slider .main-slider .slider-nav-list" ), {
                     damping : 0.05,
                 } );
             },
+
             menuScroll : function () {
                 Scrollbar.init( document.querySelector( ".nav__content" ), {
                     damping : 0.05,
                 } );
             },
+
             commentScroll : function () {
                 const comment = document.querySelector( ".comment-modal .comment-modal-container" );
                 if ( comment !== null )
@@ -746,10 +744,7 @@
                         damping : 0.05,
                     } );
             },
-
-
         };
-
     }
 
     function slider() {
@@ -771,6 +766,7 @@
                     dsnGrid.convertTextLine( title, title );
                 } );
             },
+
             progress : function ( swiper ) {
                 let interleaveOffset = 0.5;
                 swiper.on( "progress", function () {
@@ -785,10 +781,10 @@
                     }
                 } );
             },
+
             slideChange : function ( swiper ) {
                 var $this = this;
                 swiper.on( "slideChange", start );
-
 
                 function start() {
 
@@ -847,10 +843,9 @@
                         0.1,
                         "-=.8",
                     );
-
-
                 }
             },
+
             showText : function () {
                 return {
                     title : {
@@ -869,6 +864,7 @@
                     },
                 };
             },
+
             hideText : function ( $isRigth ) {
                 let x = "-90%";
                 if ( $isRigth ) x = "90%";
@@ -888,6 +884,7 @@
                     },
                 };
             },
+
             touchStart : function ( swiper ) {
                 swiper.on( "touchStart", function () {
                     let swiper = this;
@@ -896,6 +893,7 @@
                     }
                 } );
             },
+
             setTransition : function ( swiper ) {
                 swiper.on( "setTransition", function ( speed ) {
                     let swiper = this;
@@ -906,6 +904,7 @@
                     }
                 } );
             },
+
             swiperObject : function () {
                 return new Swiper( ".dsn-slider .slide-inner", {
                     speed : 1500,
@@ -936,9 +935,7 @@
                         },
                     },
                 } );
-
             },
-
 
             run : function () {
                 if ( dsn_slider.length <= 0 ) return;
@@ -972,7 +969,6 @@
             },
         };
     }
-
 
     function viewAllWork() {
         const $view = $( ".view-all" );
@@ -1026,8 +1022,6 @@
             let id = $this.data( "dsn-id" );
             return $nav_box_img.find( "img[data-dsn-id=\"" + id + "\"]" );
         }
-
-
     }
 
     function dsnAjax( $off ) {
@@ -1043,17 +1037,16 @@
             isEffectAjax : function () {
                 return !body.hasClass( "dsn-ajax" );
             },
+
             ajaxLoad : function () {
                 var $parent = this;
                 if ( $off ) {
                     this.ajax_click.off( "click" );
                 }
 
-
                 this.ajax_click.on( "click", function ( e ) {
                     if ( $parent.isEffectAjax() ) return;
                     e.preventDefault();
-
 
                     var _that = $( this );
                     var url = _that.attr( "href" );
@@ -1062,11 +1055,9 @@
                         return;
                     }
 
-
                     if ( !isAjax ) return;
                     isAjax = false;
                     effectScroller().locked();
-
 
                     $parent.ajaxLoaderElemnt( true );
 
@@ -1087,9 +1078,7 @@
                         $parent.ajaxNormal( url );
                     }
 
-
                 } );
-
             },
 
             ajaxSlider : function ( $e, url ) {
@@ -1115,14 +1104,13 @@
                     } );
                 }
 
-
             },
+
             ajaxList : function ( $e, url ) {
                 let $parent = this;
 
                 let
                     img = $( ".nav-work-img-box img.dsn-active" ).first();
-
 
                 let _url = url;
                 if ( _url !== undefined ) {
@@ -1138,6 +1126,7 @@
                     } );
                 }
             },
+
             ajaxNextProject : function ( $e, url ) {
                 let $parent = this;
                 let
@@ -1157,6 +1146,7 @@
                     } );
                 }
             },
+
             ajaxBlog : function ( $e, url ) {
                 let $parent = this;
                 let
@@ -1184,6 +1174,7 @@
                     } );
                 }
             },
+
             ajaxWork : function ( $e, url ) {
                 let img = $e.find( "img" );
                 img.removeClass( "hidden" );
@@ -1202,7 +1193,6 @@
 
 
             },
-
 
             createElement : function ( $e, url, $target, $letter, $targetLtter ) {
                 let $parent = this;
@@ -1230,7 +1220,6 @@
                     ease : Power4.easeInOut,
                     onComplete : CompleteShowImage,
                 } );
-
 
                 function CompleteShowImage() {
                     body.removeClass( _classAnimate );
@@ -1296,15 +1285,12 @@
                                 } );
                             },
                         } );
-
-
                     } );
                 }
-
             },
+
             addElement : function ( container, $e, $target ) {
                 if ( $e === undefined || $e.length <= 0 ) return undefined;
-
 
                 if ( $target === undefined || $target.length <= 0 ) {
                     $target = $e;
@@ -1358,7 +1344,6 @@
 
                 }
 
-
                 TweenMax.to( elemnt_ajax, 1, {
                     y : 0,
                     ease : Expo.easeIn,
@@ -1370,9 +1355,11 @@
                     },
                 } );
             },
+
             hideAnimate : function () {
                 TweenMax.set( $( dataAttr.animateTextAjax ), { autoAlpha : 0, y : -50 } );
             },
+
             showAnimate : function () {
                 TweenMax.staggerTo( $( dataAttr.animateTextAjax ), 1, { autoAlpha : 1, y : 0 }, 0.2 );
             },
@@ -1402,6 +1389,7 @@
 
                 } );
             },
+
             animateAjaxEnd : function () {
                 var _that = this;
                 _that.main_root.css( "transform", "" );
@@ -1420,10 +1408,7 @@
                     delay : 1,
                 } );
                 reloadAjax( true );
-
-
             },
-
 
             ajaxNext : function ( $e, url ) {
                 var img_move = $( ".dsn-imgs[data-dsn-next=\"blog\"]" );
@@ -1444,9 +1429,8 @@
                         $parent.createElement( img_move, url );
                     },
                 } );
-
-
             },
+
             ajaxTitle : function ( url ) {
                 $( "title" ).load( url + " title", "", function ( data ) {
                     document.title = $( this ).text();
@@ -1458,6 +1442,7 @@
                     } );
                 }
             },
+
             ajaxLoaderElemnt : function ( $isShow ) {
                 var $class = "dsn-ajax-effect";
                 if ( $isShow )
@@ -1465,8 +1450,6 @@
                 else
                     body.removeClass( $class );
             },
-
-
         };
     }
 
@@ -1489,7 +1472,6 @@
     function navBar() {
 
         var menu = $( ".menu-icon" );
-
 
         $( ".site-header .custom-drop-down > a" ).on( "click", function () {
             return false;
@@ -1528,11 +1510,8 @@
                     if ( dispaly !== "block" ) {
                         _that.find( "ul" ).slideDown( "slow" );
                     }
-
                 },
             );
-
-
         } );
 
         wind.on( "scroll", function () {
@@ -1569,7 +1548,6 @@
         dsnGrid.convertTextWord( text_open, text_open, true );
         dsnGrid.convertTextWord( text_close, text_close, true );
 
-
     }
 
     /**
@@ -1585,7 +1563,6 @@
             // $elemnet.css('display' , 'none');
             return;
         }
-
 
         if ( $off !== undefined && $off === true ) {
             cursorEffect();
@@ -1605,11 +1582,7 @@
             dsnGrid.elementHover( $elemnet, ".close-wind", "cursor-close" );
             dsnGrid.elementHover( $elemnet, "a:not(> img) , .dsn-button-sidebar,  button", "cursor-link" );
         }
-
-
     }
-
-
 
     /**
      *
@@ -1644,7 +1617,6 @@
                 opener : function ( element ) {
                     return element.find( "img" );
                 },
-
             },
             callbacks : {
                 open : function () {
@@ -1657,7 +1629,6 @@
                 },
                 // e.t.c.
             },
-
         } );
     }
 
@@ -1685,7 +1656,6 @@
 
         } );
 
-
         filter.on( "click", "button", function () {
             $( this ).addClass( "active" ).siblings().removeClass( "active" );
             let sc = wind;
@@ -1698,7 +1668,6 @@
                     Expo.easeInOut,
                 } );
             }, 500 );
-
         } );
 
         $gallery.find( "video" ).each( function () {
@@ -1733,7 +1702,6 @@ function SliderProject() {
             },
         } );
     } );
-
 }
 
 
@@ -1764,10 +1732,8 @@ function background() {
         if ( typeof attr !== typeof undefined && attr !== false ) {
             $( this ).css( "background-image", "url(" + attr + ")" );
         }
-
     } );
 }
-
 
 /**
  *
@@ -1792,11 +1758,7 @@ function slick_client( wind ) {
             dsnGrid.parallaxMoveElemnt( client_curs.find( ".fas.fa-angle-right" ), 25 );
             dsnGrid.parallaxMoveElemnt( client_curs.find( ".fas.fa-angle-left" ), 25 );
         }
-
-
     }
-
-
 }
 
 
@@ -1839,6 +1801,7 @@ function contactValidator() {
                     }, 3000 );
 
                 },
+
                 error : function ( error ) {
                     console.log( error );
                 },
@@ -1851,7 +1814,6 @@ function contactValidator() {
 function initMap() {
     var map_id = document.getElementById( "map" );
     var map_scropt_id = document.getElementById( "map_api" );
-
 
     if ( map_id === null ) return;
     // Styles a map in night mode.
@@ -2032,14 +1994,12 @@ function initMap() {
                         ],
                     },
                 ],
-
             } );
             google.maps.event.addDomListener( window, "resize", function () {
                 var center = map.getCenter();
                 google.maps.event.trigger( map, "resize" );
                 map.setCenter( center );
             } );
-
 
             var marker = new google.maps.Marker( {
                 position : letLeng,
@@ -2053,9 +2013,4 @@ function initMap() {
             console.log( e );
         }
     }, 1000 );
-
-
 }
-
-
-
