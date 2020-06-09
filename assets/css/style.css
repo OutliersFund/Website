@@ -1348,7 +1348,7 @@ template {
 }
 
 html {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 body {
@@ -1684,7 +1684,7 @@ body > * {
 }
 
 .one-title {
-  width: 800px;
+/*  width: 1110px;*/
   margin-bottom: 70px;
 }
 
