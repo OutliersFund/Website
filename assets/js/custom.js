@@ -192,6 +192,45 @@
             ],
         } );
 
+        $( "[data-dsn-col=\"5\"] .slick-slider" ).slick( {
+            infinite : true,
+            slidesToShow : 5,
+            arrows : false,
+            dots : true,
+            responsive : [
+
+                {
+                    breakpoint : 2000,
+                    settings : {
+                        slidesToShow : 4,
+                        slidesToScroll : 1,
+                    },
+                },
+                {
+                    breakpoint : 1400,
+                    settings : {
+                        slidesToShow : 3,
+                        slidesToScroll : 1,
+                    },
+                },
+                {
+                    breakpoint : 1000,
+                    settings : {
+                        slidesToShow : 2,
+                        slidesToScroll : 1,
+                    },
+                },
+                {
+                    breakpoint : 750,
+                    settings : {
+                        slidesToShow : 1,
+                        slidesToScroll : 1,
+                    },
+                },
+
+            ],
+        } );
+
     }
 
     function Popup() {
